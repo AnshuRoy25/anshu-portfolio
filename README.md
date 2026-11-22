@@ -1,2 +1,3 @@
 # anshu-portfolio
-Personal portfolio website
+
+Personal portfolio site. Plain HTML and CSS, deployed on Vercel.
