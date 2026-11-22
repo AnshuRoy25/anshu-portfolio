@@ -3,117 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anshu Roy</title>
-  <meta name="description" content="Anshu Roy, backend developer working on fintech products and agentic AI systems." />
+  <title>Anshu Roy | Backend Developer</title>
+  <meta name="description" content="Anshu Roy, backend developer building fintech products and agentic AI systems." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="top">
-    <a href="#" class="mark">Anshu Roy</a>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#home" class="logo">AR<span>.</span></a>
+      <nav class="menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn-small">Get in touch</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <p class="label">Backend developer</p>
-      <h1>I build backend systems for fintech products and agentic AI.</h1>
-      <p class="lede">Third-year Engineering Physics student at NIT Hamirpur, with a minor in Computer Science. Most of my time goes into APIs, payment flows, and LLM-driven tools that do real work.</p>
-      <div class="links">
+  <section class="hero" id="home">
+    <div class="glow"></div>
+    <div class="wrap hero-inner">
+      <p class="status"><span class="dot"></span> Open to internships for 2027</p>
+      <h1>Anshu Roy<br /><em>builds the backend</em><br />that money moves through.</h1>
+      <p class="hero-sub">Backend developer working on fintech products and agentic AI. Engineering Physics at NIT Hamirpur, minor in Computer Science.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn">See my work</a>
+        <a href="#contact" class="btn ghost">Contact me</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>2</strong><span>Backend internships</span></div>
+        <div><strong>35+</strong><span>APIs shipped</span></div>
+        <div><strong>3</strong><span>Hackathon finals</span></div>
+        <div><strong>8.59</strong><span>CGPA</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll">Scroll</a>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap about">
+      <p class="eyebrow">01 / About</p>
+      <div class="about-grid">
+        <h2>I like systems that handle real money and real people.</h2>
+        <div class="about-text">
+          <p>Most of what I build sits behind the screen: payment flows, auth, matching engines and APIs that need to stay correct under load.</p>
+          <p>Lately I have been building agentic AI tools, where an LLM does not just answer but takes actions, like checking compliance or assessing credit.</p>
+          <p>Outside code, I help run RoboSoc and Team Abraxas at NIT Hamirpur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="experience">
+    <div class="wrap">
+      <p class="eyebrow">02 / Experience</p>
+      <h2>Where I have worked</h2>
+      <div class="timeline">
+        <article class="job reveal">
+          <div class="job-head">
+            <h3>Full Stack Developer Intern</h3>
+            <span class="date">May to Aug 2026</span>
+          </div>
+          <p class="company">Unisole Empower, Remote</p>
+          <ul>
+            <li>Built 35+ REST endpoints in Node.js and Express with JWT, OTP email login and Google OAuth.</li>
+            <li>Designed MongoDB schemas for courses, enrollments, payments and progress tracking.</li>
+            <li>Built the Razorpay payment flow and access-controlled video streaming on Azure Blob Storage.</li>
+          </ul>
+          <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Razorpay</span><span>Azure</span></div>
+        </article>
+        <article class="job reveal">
+          <div class="job-head">
+            <h3>Backend Developer Intern</h3>
+            <span class="date">Apr to Jun 2026</span>
+          </div>
+          <p class="company">Freight Marketplace Startup, Remote</p>
+          <ul>
+            <li>Built the load-matching engine for a WhatsApp logistics platform.</li>
+            <li>Designed a real-time auction with a timed bidding window and automatic settlement.</li>
+            <li>Integrated the WhatsApp Business API with conversation state and scheduled jobs.</li>
+          </ul>
+          <div class="tags"><span>Node.js</span><span>Supabase</span><span>PostgreSQL</span><span>WhatsApp API</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <p class="eyebrow">03 / Projects</p>
+      <h2>Selected work</h2>
+      <div class="projects">
+        <a class="project reveal featured" href="https://github.com/AnshuRoy25/CreditFlow-Main" target="_blank" rel="noopener">
+          <div class="p-top"><span class="p-num">01</span><span class="p-badge">11th, AI Hack Matrix</span></div>
+          <h3>CreditFlow</h3>
+          <p>Credit scoring for 400M+ New-To-Credit Indians, using bank statements, salary consistency and cash flow instead of bureau history.</p>
+          <div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Scikit-learn</span></div>
+          <span class="p-link">View project &rarr;</span>
+        </a>
+        <a class="project reveal" href="https://github.com/AnshuRoy25/InsureSense-Main" target="_blank" rel="noopener">
+          <div class="p-top"><span class="p-num">02</span><span class="p-badge">Top 10, GenAI Mumbai</span></div>
+          <h3>InsureSense</h3>
+          <p>AI travel insurance advisor that turns flight, weather and safety signals into a personal risk report.</p>
+          <div class="tags"><span>Gemini</span><span>Google ADK</span><span>Flask</span></div>
+          <span class="p-link">View project &rarr;</span>
+        </a>
+        <a class="project reveal" href="https://github.com/AnshuRoy25/RegMind" target="_blank" rel="noopener">
+          <div class="p-top"><span class="p-num">03</span><span class="p-badge">SEBI TechSprint</span></div>
+          <h3>RegMind</h3>
+          <p>Agentic compliance platform that tracks regulatory changes and maps them to what a firm has to do.</p>
+          <div class="tags"><span>Python</span><span>LLM agents</span></div>
+          <span class="p-link">View project &rarr;</span>
+        </a>
+        <a class="project reveal" href="https://github.com/AnshuRoy25/Sona-Khata" target="_blank" rel="noopener">
+          <div class="p-top"><span class="p-num">04</span><span class="p-badge">Voice-first</span></div>
+          <h3>SonaKhata</h3>
+          <p>Gold ledger for jewellers and karigars, tracking gold given, returned and owed by voice.</p>
+          <div class="tags"><span>JavaScript</span><span>Speech</span></div>
+          <span class="p-link">View project &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <p class="eyebrow">04 / Toolkit</p>
+      <h2>What I work with</h2>
+      <div class="skill-grid">
+        <div class="skill reveal"><h4>Languages</h4><div class="chips"><span>JavaScript</span><span>Python</span><span>C++</span></div></div>
+        <div class="skill reveal"><h4>Backend</h4><div class="chips"><span>Node.js</span><span>Express</span><span>Flask</span><span>REST</span><span>WebSockets</span></div></div>
+        <div class="skill reveal"><h4>Data</h4><div class="chips"><span>MongoDB</span><span>PostgreSQL</span><span>Supabase</span><span>Pinecone</span><span>Chroma</span></div></div>
+        <div class="skill reveal"><h4>AI</h4><div class="chips"><span>LLMs</span><span>RAG</span><span>Embeddings</span><span>Ollama</span><span>Hugging Face</span></div></div>
+        <div class="skill reveal"><h4>Frontend</h4><div class="chips"><span>React</span></div></div>
+        <div class="skill reveal"><h4>Cloud</h4><div class="chips"><span>Azure</span><span>Vercel</span><span>Render</span><span>Git</span><span>Linux</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="wrap contact-inner">
+      <p class="eyebrow">05 / Contact</p>
+      <h2 class="big">Have something to build?<br /><em>Let's talk.</em></h2>
+      <a href="mailto:royanshu.main@gmail.com" class="btn">royanshu.main@gmail.com</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a href="#home" class="logo">AR<span>.</span></a>
+        <p>Backend developer. NIT Hamirpur.</p>
+      </div>
+      <div class="footer-links">
         <a href="https://github.com/AnshuRoy25" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/anshuroy2006/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:royanshu.main@gmail.com">Email</a>
       </div>
-    </section>
+    </div>
+    <div class="wrap copy">&copy; <span id="year"></span> Anshu Roy</div>
+  </footer>
 
-    <section id="work">
-      <h2>Experience</h2>
-
-      <article class="row">
-        <div class="meta">May – Aug 2026<br />Remote</div>
-        <div>
-          <h3>Full Stack Developer Intern, Unisole Empower</h3>
-          <ul>
-            <li>Built 35+ REST endpoints in Node.js and Express, with JWT auth, OTP email login and Google OAuth.</li>
-            <li>Designed the MongoDB schemas for users, courses, enrollments, payments and notifications.</li>
-            <li>Built the Razorpay payment flow with signature checks, and access-controlled video delivery on Azure Blob Storage.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="row">
-        <div class="meta">Apr – Jun 2026<br />Remote</div>
-        <div>
-          <h3>Backend Developer Intern, Freight Marketplace Startup</h3>
-          <ul>
-            <li>Built the load-matching engine for a WhatsApp logistics platform on Supabase and Node.js.</li>
-            <li>Designed a real-time auction for loads, with a timed bidding window and automatic settlement.</li>
-            <li>Integrated the WhatsApp Business API, with conversation state and scheduled notifications.</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <a class="card" href="https://github.com/AnshuRoy25/CreditFlow-Main" target="_blank" rel="noopener">
-          <h3>CreditFlow</h3>
-          <p>Credit assessment for New-To-Credit Indians, scoring people from bank statements, salary consistency and cash flow instead of bureau history.</p>
-          <span class="tech">React · Node.js · MongoDB · Scikit-learn</span>
-        </a>
-        <a class="card" href="https://github.com/AnshuRoy25/InsureSense-Main" target="_blank" rel="noopener">
-          <h3>InsureSense</h3>
-          <p>AI travel insurance advisor that turns flight, weather, safety and health signals into a personal risk report.</p>
-          <span class="tech">React · Node.js · Flask · Gemini</span>
-        </a>
-        <a class="card" href="https://github.com/AnshuRoy25/RegMind" target="_blank" rel="noopener">
-          <h3>RegMind</h3>
-          <p>Agentic compliance platform that tracks regulatory changes and maps them to what a firm has to act on. Built for SEBI TechSprint 2026.</p>
-          <span class="tech">Python · LLM agents</span>
-        </a>
-        <a class="card" href="https://github.com/AnshuRoy25/Sona-Khata" target="_blank" rel="noopener">
-          <h3>SonaKhata</h3>
-          <p>Voice-first gold ledger for jewellers and karigars, tracking gold given, returned and owed.</p>
-          <span class="tech">JavaScript · Voice</span>
-        </a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Recognition</h2>
-      <ul class="plain">
-        <li><span>11th, FinTech category</span> AI Hack Matrix, INNOVFEST 2026, with CreditFlow. Top 20 of 850+ teams.</li>
-        <li><span>Top 10 finalist</span> GenAI Mumbai Hackathon, with InsureSense. 418 teams.</li>
-        <li><span>16th of 390 teams</span> GDG HackCentrix, with CreditFlow.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <dl class="skills">
-        <dt>Languages</dt><dd>C++, Python, JavaScript</dd>
-        <dt>Backend</dt><dd>Node.js, Express, Flask</dd>
-        <dt>Frontend</dt><dd>React</dd>
-        <dt>Data</dt><dd>MongoDB, PostgreSQL, Supabase, Pinecone, Chroma</dd>
-        <dt>AI</dt><dd>LLMs, RAG, embeddings, Ollama, Hugging Face</dd>
-        <dt>Cloud</dt><dd>Azure Blob Storage, Vercel, Render</dd>
-      </dl>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Open to internships and interesting backend work.</p>
-      <a class="mail" href="mailto:royanshu.main@gmail.com">royanshu.main@gmail.com</a>
-    </section>
-  </main>
-
-  <footer>Anshu Roy · NIT Hamirpur</footer>
+  <script src="script.js"></script>
 </body>
 </html>
